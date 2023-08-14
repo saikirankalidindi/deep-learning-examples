@@ -1,5 +1,7 @@
+#import required libararies
 import numpy as np
 import tensorflow as tf
+from tensoflow import keras
 from keras import layers
 
 # Generate some sample data for a time series prediction task
