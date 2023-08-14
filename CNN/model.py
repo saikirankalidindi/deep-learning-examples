@@ -1,8 +1,12 @@
+#import required libraries
 import tensorflow as tf
 from keras import layers, datasets
 
 # Load and preprocess the dataset (CIFAR-10 in this case)
+#loading cifar10
+
 (x_train, y_train), (x_test, y_test) = datasets.cifar10.load_data()
+#diving with 255 to get normalized data
 x_train = x_train.astype('float32') / 255.0
 x_test = x_test.astype('float32') / 255.0
 
