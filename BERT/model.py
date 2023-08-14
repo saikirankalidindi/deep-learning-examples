@@ -6,7 +6,7 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 bert_model = BertModel.from_pretrained('bert-base-uncased')
 
 # Example text
-text = "This is an example sentence."
+text = "This is an example sentence with words."
 
 # Tokenize the text and get BERT embeddings
 inputs = tokenizer(text, return_tensors='tf')
